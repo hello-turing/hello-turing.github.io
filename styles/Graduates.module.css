@@ -1,0 +1,102 @@
+
+.container {
+    background-color: black;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 90px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    color: white;
+}
+
+.graduates {
+    display: flex;
+    flex-direction: row;
+    margin-top: 83px;
+    justify-content: space-around;
+    margin-bottom: 117px;
+}
+
+.card {
+    padding-left: 33px;
+}
+
+.cardTitle {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.cardDescription {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 18px; 
+}
+
+hr.new {
+    border: 1px solid #B9BDC1;
+    opacity: 70%;
+}
+
+.callToAction {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.callToActionTitle {
+    color: white;
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 68px;
+    width: 720px;
+    font-family: "Roboto";
+}
+
+.actionButton {
+    border: 3px solid #FEFA62;
+border-radius: 33px;
+width: 380px;
+height: 65px;
+background-color: transparent;
+color: #FEFA62;
+font-family: "IBM Plex Mono", monospace;
+font-weight: 600;
+font-size: 30px;
+}
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footerButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.footerButton {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-size: 24px;
+}
