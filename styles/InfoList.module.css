@@ -61,3 +61,44 @@ height: 65px;
 margin-top: 60px;
 margin-bottom: 100px;
 }
+
+@media screen and (max-width: 1200px) {
+    .componentDescription {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .listComponent {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .componentTitle {
+        width: 90%;
+    }
+
+    .componentDescription {
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0px;
+    }
+
+    .title {
+        font-size: 54px;
+        line-height: 57px;
+    }
+
+    .actionButton {
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

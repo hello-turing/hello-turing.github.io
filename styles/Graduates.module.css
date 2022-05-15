@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.subcontainer {
+    max-width: 1200px;
+}
+
 .title {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
@@ -18,15 +22,42 @@
 }
 
 .graduates {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
     margin-top: 83px;
-    justify-content: space-around;
     margin-bottom: 117px;
+    margin-left: 0px;
+    background-color: black;
+    gap: 33px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
+/* width */
+
+.container ::-webkit-scrollbar {
+    border-radius: 5px;
+ }
+/* Track */
+.container ::-webkit-scrollbar-track {
+    background: #B9BDC1;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.container  ::-webkit-scrollbar-thumb {
+    background: #FEFA62;
+    border-radius: 10px;
+  }
+  
 .card {
-    padding-left: 33px;
+    /* padding-left: 33px;
+    min-width: 340px; */
+}
+
+.container img {
+    object-fit: cover;
 }
 
 .cardTitle {
@@ -99,4 +130,89 @@ font-size: 30px;
     font-family: "IBM Plex Mono";
     font-weight: 700;
     font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .subcontainer {
+        width: 1000px;
+    }
+
+    .callToAction {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 44px;
+        margin-left: 16px;
+        line-height: 57px;
+    }
+
+    .graduates {
+        grid-auto-columns: 92%;
+        gap: 16px;
+        margin-left: 16px;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+   .subcontainer {
+       max-width: 100%;
+   } 
+
+   .container ::-webkit-scrollbar {
+    border-radius: 5px;
+ }
+/* Track */
+.container ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.container  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+   .container img {
+       object-fit: cover;
+   }
+
+   .callToAction {
+       flex-direction: column;
+   }
+
+   .callToActionTitle {
+       font-size: 39px;
+       line-height: 45px;
+       margin-top: 0px;
+       width: 320px;
+       margin-left: 16px;
+       margin-right: 16px;
+   }
+
+   .actionButton {
+       width: 340px;
+       margin-left: 16px;
+       margin-right: 16px;
+   }
+   
+   .logo {
+   }
+
+   .footerButtons {
+       width: 100vw;
+       padding-left: 16px;
+       padding-right: 16px;
+   }
+
+   .footer {
+
+   }
+
+   .container {
+   }
 }

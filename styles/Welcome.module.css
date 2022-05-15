@@ -100,3 +100,49 @@ hr.new {
     border: 1px solid #B9BDC1;
     opacity: 70%;
 }
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .logoBlock {
+        margin-left: 16px;
+    }
+
+    .buttonsBlock {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .title {
+        font-size: 54px;
+        margin-top: 50px;
+        line-height: 57px;
+        margin-left: 16px;
+        margin-bottom: 0px;
+        margin-right: 16px;
+    }
+
+    .descriptionContainer {
+        max-width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 40px;
+
+    }
+
+    .callToActionContainer {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .actionButton {
+        width: 320px;
+    }
+}
