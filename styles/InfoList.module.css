@@ -1,0 +1,104 @@
+.container {
+    background-color: #EFF0F1;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 90px;
+    margin-top: 50px;
+}
+
+.listComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 118px;
+}
+
+.componentTitle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 68px;
+}
+
+.componentDescription {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    width: 800px;
+    margin-left: 100px;
+}
+
+.subcontainer {
+}
+
+hr.new {
+    border: 1px solid #B9BDC1;
+    opacity: 70%;
+}
+
+.actionButton {
+    background: #FEFA62;
+/* Black */
+
+border: 3px solid #000000;
+border-radius: 33px;
+font-family: 'IBM Plex Mono';
+font-weight: 600;
+font-size: 30px;
+line-height: 39px;
+width: 380px;
+height: 65px;
+margin-top: 60px;
+margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .componentDescription {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .listComponent {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .componentTitle {
+        width: 90%;
+    }
+
+    .componentDescription {
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0px;
+    }
+
+    .title {
+        font-size: 54px;
+        line-height: 57px;
+    }
+
+    .actionButton {
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

@@ -1,0 +1,148 @@
+ /* <div>
+      <header className="header">
+        <div className="buttonsBlock">
+          <button className="headerButton">О сообществе</button>
+          <button className="headerButton">Программа</button>
+        </div>
+        <div className="logoBlock">
+            <img src="sduLogoWhite.png" alt="" />
+           <img src="turingLogoWhite" alt="" /> 
+        </div>
+      </header>
+    </div>
+  ); */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.buttonsBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 47;
+}
+
+.headerButton { 
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px; 
+    font-weight: 500;    
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.logoBlock {
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.headerContainer {
+    margin-bottom: 0px;
+    background-color: #0028BE;
+    padding-bottom: 76px;
+}
+
+.title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 112px;
+    color: white;
+    line-height: 107px;
+    max-width: 672px;
+    margin-right: 20%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.callToActionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 0px;
+}
+
+.description {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 28px;
+    line-height: 32px;
+     font-weight: 500;
+}
+
+.actionButton {
+    width: 380px;
+    height: 65px;
+    color: #FEFA62;
+    background-color: transparent;
+    border: 3px #FEFA62 solid;
+    border-radius: 33px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 30px;
+}
+
+.descriptionContainer {
+    max-width: 586px;    
+    margin-top: 10px;
+
+    margin-left: 30%;
+    margin-bottom: 0px;
+}
+
+hr.new {
+    border: 1px solid #B9BDC1;
+    opacity: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .logoBlock {
+        margin-left: 16px;
+    }
+
+    .buttonsBlock {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .title {
+        font-size: 54px;
+        margin-top: 50px;
+        line-height: 57px;
+        margin-left: 16px;
+        margin-bottom: 0px;
+        margin-right: 16px;
+    }
+
+    .descriptionContainer {
+        max-width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 40px;
+
+    }
+
+    .callToActionContainer {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .actionButton {
+        width: 320px;
+    }
+}
